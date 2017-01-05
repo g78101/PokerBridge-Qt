@@ -1,0 +1,945 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		9D81AC124274FC265F152F6E /* Qt Preprocess */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "BridgeClient" */;
+			buildPhases = (
+				5E618435888B9D49F8540165 /* Qt Qmake */,
+				7EF0942E79C014DCEC8976BC /* Qt Preprocessors */,
+			);
+			dependencies = (
+			);
+			name = "Qt Preprocess";
+			productName = "Qt Preprocess";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0809297AB86D7A49846A3197 /* GLPlayBridge.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 51D790443CCEAA6610C22A7C /* GLPlayBridge.cpp */; settings = {ATTRIBUTES = (); }; };
+		1586C0A9BDD0F0F481B32D09 /* moc_MainWindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = F04882D6A0AD9CAFE7703D8F /* moc_MainWindow.cpp */; settings = {ATTRIBUTES = (); }; };
+		3AEDB3111E1E29CD000A6B8C /* CoreFoundation.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 3AEDB30E1E1E29CD000A6B8C /* CoreFoundation.framework */; };
+		3AEDB3121E1E29CD000A6B8C /* GLUT.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 3AEDB30F1E1E29CD000A6B8C /* GLUT.framework */; };
+		3AEDB3131E1E29CD000A6B8C /* OpenAL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 3AEDB3101E1E29CD000A6B8C /* OpenAL.framework */; };
+		3AEDB37E1E1E29E0000A6B8C /* 0.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3151E1E29E0000A6B8C /* 0.bmp */; };
+		3AEDB37F1E1E29E0000A6B8C /* 0.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3161E1E29E0000A6B8C /* 0.png */; };
+		3AEDB3801E1E29E0000A6B8C /* 1.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3171E1E29E0000A6B8C /* 1.bmp */; };
+		3AEDB3811E1E29E0000A6B8C /* 1.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3181E1E29E0000A6B8C /* 1.png */; };
+		3AEDB3821E1E29E0000A6B8C /* 2.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3191E1E29E0000A6B8C /* 2.bmp */; };
+		3AEDB3831E1E29E0000A6B8C /* 2.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB31A1E1E29E0000A6B8C /* 2.png */; };
+		3AEDB3841E1E29E0000A6B8C /* 3.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB31B1E1E29E0000A6B8C /* 3.bmp */; };
+		3AEDB3851E1E29E0000A6B8C /* 3.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB31C1E1E29E0000A6B8C /* 3.png */; };
+		3AEDB3861E1E29E0000A6B8C /* 4.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB31D1E1E29E0000A6B8C /* 4.bmp */; };
+		3AEDB3871E1E29E0000A6B8C /* 4.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB31E1E1E29E0000A6B8C /* 4.png */; };
+		3AEDB3881E1E29E0000A6B8C /* 5.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB31F1E1E29E0000A6B8C /* 5.bmp */; };
+		3AEDB3891E1E29E0000A6B8C /* 5.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3201E1E29E0000A6B8C /* 5.png */; };
+		3AEDB38A1E1E29E0000A6B8C /* 6.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3211E1E29E0000A6B8C /* 6.bmp */; };
+		3AEDB38B1E1E29E0000A6B8C /* 6.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3221E1E29E0000A6B8C /* 6.png */; };
+		3AEDB38C1E1E29E0000A6B8C /* 7.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3231E1E29E0000A6B8C /* 7.bmp */; };
+		3AEDB38D1E1E29E0000A6B8C /* 7.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3241E1E29E0000A6B8C /* 7.png */; };
+		3AEDB38E1E1E29E0000A6B8C /* 8.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3251E1E29E0000A6B8C /* 8.bmp */; };
+		3AEDB38F1E1E29E0000A6B8C /* 8.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3261E1E29E0000A6B8C /* 8.png */; };
+		3AEDB3901E1E29E0000A6B8C /* 9.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3271E1E29E0000A6B8C /* 9.bmp */; };
+		3AEDB3911E1E29E0000A6B8C /* 9.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3281E1E29E0000A6B8C /* 9.png */; };
+		3AEDB3921E1E29E0000A6B8C /* 10.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3291E1E29E0000A6B8C /* 10.bmp */; };
+		3AEDB3931E1E29E0000A6B8C /* 10.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB32A1E1E29E0000A6B8C /* 10.png */; };
+		3AEDB3941E1E29E0000A6B8C /* 11.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB32B1E1E29E0000A6B8C /* 11.bmp */; };
+		3AEDB3951E1E29E0000A6B8C /* 11.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB32C1E1E29E0000A6B8C /* 11.png */; };
+		3AEDB3961E1E29E0000A6B8C /* 12.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB32D1E1E29E0000A6B8C /* 12.bmp */; };
+		3AEDB3971E1E29E0000A6B8C /* 12.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB32E1E1E29E0000A6B8C /* 12.png */; };
+		3AEDB3981E1E29E0000A6B8C /* 13.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB32F1E1E29E0000A6B8C /* 13.bmp */; };
+		3AEDB3991E1E29E0000A6B8C /* 13.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3301E1E29E0000A6B8C /* 13.png */; };
+		3AEDB39A1E1E29E0000A6B8C /* 14.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3311E1E29E0000A6B8C /* 14.bmp */; };
+		3AEDB39B1E1E29E0000A6B8C /* 14.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3321E1E29E0000A6B8C /* 14.png */; };
+		3AEDB39C1E1E29E0000A6B8C /* 15.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3331E1E29E0000A6B8C /* 15.bmp */; };
+		3AEDB39D1E1E29E0000A6B8C /* 15.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3341E1E29E0000A6B8C /* 15.png */; };
+		3AEDB39E1E1E29E0000A6B8C /* 16.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3351E1E29E0000A6B8C /* 16.bmp */; };
+		3AEDB39F1E1E29E0000A6B8C /* 16.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3361E1E29E0000A6B8C /* 16.png */; };
+		3AEDB3A01E1E29E0000A6B8C /* 17.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3371E1E29E0000A6B8C /* 17.bmp */; };
+		3AEDB3A11E1E29E0000A6B8C /* 17.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3381E1E29E0000A6B8C /* 17.png */; };
+		3AEDB3A21E1E29E0000A6B8C /* 18.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3391E1E29E0000A6B8C /* 18.bmp */; };
+		3AEDB3A31E1E29E0000A6B8C /* 18.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB33A1E1E29E0000A6B8C /* 18.png */; };
+		3AEDB3A41E1E29E0000A6B8C /* 19.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB33B1E1E29E0000A6B8C /* 19.bmp */; };
+		3AEDB3A51E1E29E0000A6B8C /* 19.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB33C1E1E29E0000A6B8C /* 19.png */; };
+		3AEDB3A61E1E29E0000A6B8C /* 20.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB33D1E1E29E0000A6B8C /* 20.bmp */; };
+		3AEDB3A71E1E29E0000A6B8C /* 20.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB33E1E1E29E0000A6B8C /* 20.png */; };
+		3AEDB3A81E1E29E0000A6B8C /* 21.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB33F1E1E29E0000A6B8C /* 21.bmp */; };
+		3AEDB3A91E1E29E0000A6B8C /* 21.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3401E1E29E0000A6B8C /* 21.png */; };
+		3AEDB3AA1E1E29E0000A6B8C /* 22.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3411E1E29E0000A6B8C /* 22.bmp */; };
+		3AEDB3AB1E1E29E0000A6B8C /* 22.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3421E1E29E0000A6B8C /* 22.png */; };
+		3AEDB3AC1E1E29E0000A6B8C /* 23.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3431E1E29E0000A6B8C /* 23.bmp */; };
+		3AEDB3AD1E1E29E0000A6B8C /* 23.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3441E1E29E0000A6B8C /* 23.png */; };
+		3AEDB3AE1E1E29E0000A6B8C /* 24.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3451E1E29E0000A6B8C /* 24.bmp */; };
+		3AEDB3AF1E1E29E0000A6B8C /* 24.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3461E1E29E0000A6B8C /* 24.png */; };
+		3AEDB3B01E1E29E0000A6B8C /* 25.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3471E1E29E0000A6B8C /* 25.bmp */; };
+		3AEDB3B11E1E29E0000A6B8C /* 25.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3481E1E29E0000A6B8C /* 25.png */; };
+		3AEDB3B21E1E29E0000A6B8C /* 26.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3491E1E29E0000A6B8C /* 26.bmp */; };
+		3AEDB3B31E1E29E0000A6B8C /* 26.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB34A1E1E29E0000A6B8C /* 26.png */; };
+		3AEDB3B41E1E29E0000A6B8C /* 27.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB34B1E1E29E0000A6B8C /* 27.bmp */; };
+		3AEDB3B51E1E29E0000A6B8C /* 27.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB34C1E1E29E0000A6B8C /* 27.png */; };
+		3AEDB3B61E1E29E0000A6B8C /* 28.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB34D1E1E29E0000A6B8C /* 28.bmp */; };
+		3AEDB3B71E1E29E0000A6B8C /* 28.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB34E1E1E29E0000A6B8C /* 28.png */; };
+		3AEDB3B81E1E29E0000A6B8C /* 29.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB34F1E1E29E0000A6B8C /* 29.bmp */; };
+		3AEDB3B91E1E29E0000A6B8C /* 29.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3501E1E29E0000A6B8C /* 29.png */; };
+		3AEDB3BA1E1E29E0000A6B8C /* 30.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3511E1E29E0000A6B8C /* 30.bmp */; };
+		3AEDB3BB1E1E29E0000A6B8C /* 30.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3521E1E29E0000A6B8C /* 30.png */; };
+		3AEDB3BC1E1E29E0000A6B8C /* 31.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3531E1E29E0000A6B8C /* 31.bmp */; };
+		3AEDB3BD1E1E29E0000A6B8C /* 31.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3541E1E29E0000A6B8C /* 31.png */; };
+		3AEDB3BE1E1E29E0000A6B8C /* 32.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3551E1E29E0000A6B8C /* 32.bmp */; };
+		3AEDB3BF1E1E29E0000A6B8C /* 32.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3561E1E29E0000A6B8C /* 32.png */; };
+		3AEDB3C01E1E29E0000A6B8C /* 33.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3571E1E29E0000A6B8C /* 33.bmp */; };
+		3AEDB3C11E1E29E0000A6B8C /* 33.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3581E1E29E0000A6B8C /* 33.png */; };
+		3AEDB3C21E1E29E0000A6B8C /* 34.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3591E1E29E0000A6B8C /* 34.bmp */; };
+		3AEDB3C31E1E29E0000A6B8C /* 34.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB35A1E1E29E0000A6B8C /* 34.png */; };
+		3AEDB3C41E1E29E0000A6B8C /* 35.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB35B1E1E29E0000A6B8C /* 35.bmp */; };
+		3AEDB3C51E1E29E0000A6B8C /* 35.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB35C1E1E29E0000A6B8C /* 35.png */; };
+		3AEDB3C61E1E29E0000A6B8C /* 36.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB35D1E1E29E0000A6B8C /* 36.bmp */; };
+		3AEDB3C71E1E29E0000A6B8C /* 36.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB35E1E1E29E0000A6B8C /* 36.png */; };
+		3AEDB3C81E1E29E0000A6B8C /* 37.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB35F1E1E29E0000A6B8C /* 37.bmp */; };
+		3AEDB3C91E1E29E0000A6B8C /* 37.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3601E1E29E0000A6B8C /* 37.png */; };
+		3AEDB3CA1E1E29E0000A6B8C /* 38.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3611E1E29E0000A6B8C /* 38.bmp */; };
+		3AEDB3CB1E1E29E0000A6B8C /* 38.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3621E1E29E0000A6B8C /* 38.png */; };
+		3AEDB3CC1E1E29E0000A6B8C /* 39.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3631E1E29E0000A6B8C /* 39.bmp */; };
+		3AEDB3CD1E1E29E0000A6B8C /* 39.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3641E1E29E0000A6B8C /* 39.png */; };
+		3AEDB3CE1E1E29E0000A6B8C /* 40.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3651E1E29E0000A6B8C /* 40.bmp */; };
+		3AEDB3CF1E1E29E0000A6B8C /* 40.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3661E1E29E0000A6B8C /* 40.png */; };
+		3AEDB3D01E1E29E0000A6B8C /* 41.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3671E1E29E0000A6B8C /* 41.bmp */; };
+		3AEDB3D11E1E29E0000A6B8C /* 41.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3681E1E29E0000A6B8C /* 41.png */; };
+		3AEDB3D21E1E29E0000A6B8C /* 42.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3691E1E29E0000A6B8C /* 42.bmp */; };
+		3AEDB3D31E1E29E0000A6B8C /* 42.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB36A1E1E29E0000A6B8C /* 42.png */; };
+		3AEDB3D41E1E29E0000A6B8C /* 43.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB36B1E1E29E0000A6B8C /* 43.bmp */; };
+		3AEDB3D51E1E29E0000A6B8C /* 43.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB36C1E1E29E0000A6B8C /* 43.png */; };
+		3AEDB3D61E1E29E0000A6B8C /* 44.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB36D1E1E29E0000A6B8C /* 44.bmp */; };
+		3AEDB3D71E1E29E0000A6B8C /* 44.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB36E1E1E29E0000A6B8C /* 44.png */; };
+		3AEDB3D81E1E29E0000A6B8C /* 45.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB36F1E1E29E0000A6B8C /* 45.bmp */; };
+		3AEDB3D91E1E29E0000A6B8C /* 45.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3701E1E29E0000A6B8C /* 45.png */; };
+		3AEDB3DA1E1E29E0000A6B8C /* 46.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3711E1E29E0000A6B8C /* 46.bmp */; };
+		3AEDB3DB1E1E29E0000A6B8C /* 46.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3721E1E29E0000A6B8C /* 46.png */; };
+		3AEDB3DC1E1E29E0000A6B8C /* 47.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3731E1E29E0000A6B8C /* 47.bmp */; };
+		3AEDB3DD1E1E29E0000A6B8C /* 47.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3741E1E29E0000A6B8C /* 47.png */; };
+		3AEDB3DE1E1E29E0000A6B8C /* 48.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3751E1E29E0000A6B8C /* 48.bmp */; };
+		3AEDB3DF1E1E29E0000A6B8C /* 48.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3761E1E29E0000A6B8C /* 48.png */; };
+		3AEDB3E01E1E29E0000A6B8C /* 49.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3771E1E29E0000A6B8C /* 49.bmp */; };
+		3AEDB3E11E1E29E0000A6B8C /* 50.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3781E1E29E0000A6B8C /* 50.bmp */; };
+		3AEDB3E21E1E29E0000A6B8C /* 51.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB3791E1E29E0000A6B8C /* 51.bmp */; };
+		3AEDB3E31E1E29E0000A6B8C /* 52.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB37A1E1E29E0000A6B8C /* 52.bmp */; };
+		3AEDB3E41E1E29E0000A6B8C /* 53.bmp in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB37B1E1E29E0000A6B8C /* 53.bmp */; };
+		3AEDB3E51E1E29E0000A6B8C /* ring.wav in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB37C1E1E29E0000A6B8C /* ring.wav */; };
+		3AEDB3E61E1E29E0000A6B8C /* user.png in Copy Bundle Resources */ = {isa = PBXBuildFile; fileRef = 3AEDB37D1E1E29E0000A6B8C /* user.png */; };
+		66C879EFA64576706D527677 /* QtGui.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 0A7154F3F5A651E46539DF2A /* QtGui.framework */; };
+		67DA2D94A212B55CB3220214 /* QtOpenGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = BE3388F56BA13168E62BDFB2 /* QtOpenGL.framework */; };
+		7370F8EA074851AEBFF0AD5F /* moc_GLPlayBridge.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 98763FC7F2F2AB73F6CD42CE /* moc_GLPlayBridge.cpp */; settings = {ATTRIBUTES = (); }; };
+		7DACF5E8ADF324CFE0723B2A /* QtCore.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 2EA41A90C67CBB500EA8473F /* QtCore.framework */; };
+		8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = D4B32C2222F82AC56BADEB21 /* OpenGL.framework */; };
+		8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A1A67BEAA744704B29168D39 /* IOKit.framework */; };
+		A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */; };
+		ACEC66E197D7EDD57BD9E698 /* GLCallBridge.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 5FA2F2BB42F087B38292F91C /* GLCallBridge.cpp */; settings = {ATTRIBUTES = (); }; };
+		B0B4AB2A156AEB6915024CD7 /* QtWidgets.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 0DA7A73C7010638164DD6E44 /* QtWidgets.framework */; };
+		D7753E629CBA27E8E326BC10 /* main.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 95D62C0CF55BCD3D1ED663AE /* main.cpp */; settings = {ATTRIBUTES = (); }; };
+		DD4DC29550086D694AFB42D8 /* moc_GLCallBridge.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = 1F01AA59E335C2B17B6F2391 /* moc_GLCallBridge.cpp */; settings = {ATTRIBUTES = (); }; };
+		E104B2F0093DA8D2847D8978 /* QtNetwork.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = A90BC9AC9DC4E4977EB6BF3F /* QtNetwork.framework */; };
+		E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */ = {isa = PBXBuildFile; fileRef = 8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */; };
+		FF209A800FC7B68C9DAF2A74 /* MainWindow.cpp in Compile Sources */ = {isa = PBXBuildFile; fileRef = C4887721104ADC284C2EA8D4 /* MainWindow.cpp */; settings = {ATTRIBUTES = (); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3AEDB30D1E1E29B3000A6B8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6DB9C3763D02B1415CD9D565 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D81AC124274FC265F152F6E;
+			remoteInfo = "Qt Preprocess";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A7154F3F5A651E46539DF2A /* QtGui.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtGui.framework; path = /usr/local/Cellar/qt5/5.7.1_1/lib/QtGui.framework; sourceTree = "<absolute>"; };
+		0DA7A73C7010638164DD6E44 /* QtWidgets.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtWidgets.framework; path = /usr/local/Cellar/qt5/5.7.1_1/lib/QtWidgets.framework; sourceTree = "<absolute>"; };
+		1F01AA59E335C2B17B6F2391 /* moc_GLCallBridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_GLCallBridge.cpp; path = "/Users/Talka_Ying/Documents/Xcode/PokerBridge-Qt/BridgeClient/moc_GLCallBridge.cpp"; sourceTree = "<absolute>"; };
+		2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DiskArbitration.framework; path = /System/Library/Frameworks/DiskArbitration.framework; sourceTree = "<absolute>"; };
+		2EA41A90C67CBB500EA8473F /* QtCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtCore.framework; path = /usr/local/Cellar/qt5/5.7.1_1/lib/QtCore.framework; sourceTree = "<absolute>"; };
+		36132330D49E1542337FDF2D /* alut.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = alut.h; path = "/Users/Talka_Ying/Documents/Xcode/PokerBridge-Qt/BridgeClient/BridgeClient/header/alut.h"; sourceTree = "<absolute>"; };
+		3AEDB30E1E1E29CD000A6B8C /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		3AEDB30F1E1E29CD000A6B8C /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		3AEDB3101E1E29CD000A6B8C /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = System/Library/Frameworks/OpenAL.framework; sourceTree = SDKROOT; };
+		3AEDB3151E1E29E0000A6B8C /* 0.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 0.bmp; path = BridgeClient/Resource/0.bmp; sourceTree = "<group>"; };
+		3AEDB3161E1E29E0000A6B8C /* 0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 0.png; path = BridgeClient/Resource/0.png; sourceTree = "<group>"; };
+		3AEDB3171E1E29E0000A6B8C /* 1.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 1.bmp; path = BridgeClient/Resource/1.bmp; sourceTree = "<group>"; };
+		3AEDB3181E1E29E0000A6B8C /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 1.png; path = BridgeClient/Resource/1.png; sourceTree = "<group>"; };
+		3AEDB3191E1E29E0000A6B8C /* 2.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 2.bmp; path = BridgeClient/Resource/2.bmp; sourceTree = "<group>"; };
+		3AEDB31A1E1E29E0000A6B8C /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 2.png; path = BridgeClient/Resource/2.png; sourceTree = "<group>"; };
+		3AEDB31B1E1E29E0000A6B8C /* 3.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 3.bmp; path = BridgeClient/Resource/3.bmp; sourceTree = "<group>"; };
+		3AEDB31C1E1E29E0000A6B8C /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 3.png; path = BridgeClient/Resource/3.png; sourceTree = "<group>"; };
+		3AEDB31D1E1E29E0000A6B8C /* 4.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 4.bmp; path = BridgeClient/Resource/4.bmp; sourceTree = "<group>"; };
+		3AEDB31E1E1E29E0000A6B8C /* 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 4.png; path = BridgeClient/Resource/4.png; sourceTree = "<group>"; };
+		3AEDB31F1E1E29E0000A6B8C /* 5.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 5.bmp; path = BridgeClient/Resource/5.bmp; sourceTree = "<group>"; };
+		3AEDB3201E1E29E0000A6B8C /* 5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 5.png; path = BridgeClient/Resource/5.png; sourceTree = "<group>"; };
+		3AEDB3211E1E29E0000A6B8C /* 6.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 6.bmp; path = BridgeClient/Resource/6.bmp; sourceTree = "<group>"; };
+		3AEDB3221E1E29E0000A6B8C /* 6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 6.png; path = BridgeClient/Resource/6.png; sourceTree = "<group>"; };
+		3AEDB3231E1E29E0000A6B8C /* 7.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 7.bmp; path = BridgeClient/Resource/7.bmp; sourceTree = "<group>"; };
+		3AEDB3241E1E29E0000A6B8C /* 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 7.png; path = BridgeClient/Resource/7.png; sourceTree = "<group>"; };
+		3AEDB3251E1E29E0000A6B8C /* 8.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 8.bmp; path = BridgeClient/Resource/8.bmp; sourceTree = "<group>"; };
+		3AEDB3261E1E29E0000A6B8C /* 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 8.png; path = BridgeClient/Resource/8.png; sourceTree = "<group>"; };
+		3AEDB3271E1E29E0000A6B8C /* 9.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 9.bmp; path = BridgeClient/Resource/9.bmp; sourceTree = "<group>"; };
+		3AEDB3281E1E29E0000A6B8C /* 9.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 9.png; path = BridgeClient/Resource/9.png; sourceTree = "<group>"; };
+		3AEDB3291E1E29E0000A6B8C /* 10.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 10.bmp; path = BridgeClient/Resource/10.bmp; sourceTree = "<group>"; };
+		3AEDB32A1E1E29E0000A6B8C /* 10.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 10.png; path = BridgeClient/Resource/10.png; sourceTree = "<group>"; };
+		3AEDB32B1E1E29E0000A6B8C /* 11.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 11.bmp; path = BridgeClient/Resource/11.bmp; sourceTree = "<group>"; };
+		3AEDB32C1E1E29E0000A6B8C /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 11.png; path = BridgeClient/Resource/11.png; sourceTree = "<group>"; };
+		3AEDB32D1E1E29E0000A6B8C /* 12.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 12.bmp; path = BridgeClient/Resource/12.bmp; sourceTree = "<group>"; };
+		3AEDB32E1E1E29E0000A6B8C /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 12.png; path = BridgeClient/Resource/12.png; sourceTree = "<group>"; };
+		3AEDB32F1E1E29E0000A6B8C /* 13.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 13.bmp; path = BridgeClient/Resource/13.bmp; sourceTree = "<group>"; };
+		3AEDB3301E1E29E0000A6B8C /* 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 13.png; path = BridgeClient/Resource/13.png; sourceTree = "<group>"; };
+		3AEDB3311E1E29E0000A6B8C /* 14.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 14.bmp; path = BridgeClient/Resource/14.bmp; sourceTree = "<group>"; };
+		3AEDB3321E1E29E0000A6B8C /* 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 14.png; path = BridgeClient/Resource/14.png; sourceTree = "<group>"; };
+		3AEDB3331E1E29E0000A6B8C /* 15.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 15.bmp; path = BridgeClient/Resource/15.bmp; sourceTree = "<group>"; };
+		3AEDB3341E1E29E0000A6B8C /* 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 15.png; path = BridgeClient/Resource/15.png; sourceTree = "<group>"; };
+		3AEDB3351E1E29E0000A6B8C /* 16.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 16.bmp; path = BridgeClient/Resource/16.bmp; sourceTree = "<group>"; };
+		3AEDB3361E1E29E0000A6B8C /* 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 16.png; path = BridgeClient/Resource/16.png; sourceTree = "<group>"; };
+		3AEDB3371E1E29E0000A6B8C /* 17.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 17.bmp; path = BridgeClient/Resource/17.bmp; sourceTree = "<group>"; };
+		3AEDB3381E1E29E0000A6B8C /* 17.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 17.png; path = BridgeClient/Resource/17.png; sourceTree = "<group>"; };
+		3AEDB3391E1E29E0000A6B8C /* 18.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 18.bmp; path = BridgeClient/Resource/18.bmp; sourceTree = "<group>"; };
+		3AEDB33A1E1E29E0000A6B8C /* 18.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 18.png; path = BridgeClient/Resource/18.png; sourceTree = "<group>"; };
+		3AEDB33B1E1E29E0000A6B8C /* 19.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 19.bmp; path = BridgeClient/Resource/19.bmp; sourceTree = "<group>"; };
+		3AEDB33C1E1E29E0000A6B8C /* 19.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 19.png; path = BridgeClient/Resource/19.png; sourceTree = "<group>"; };
+		3AEDB33D1E1E29E0000A6B8C /* 20.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 20.bmp; path = BridgeClient/Resource/20.bmp; sourceTree = "<group>"; };
+		3AEDB33E1E1E29E0000A6B8C /* 20.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 20.png; path = BridgeClient/Resource/20.png; sourceTree = "<group>"; };
+		3AEDB33F1E1E29E0000A6B8C /* 21.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 21.bmp; path = BridgeClient/Resource/21.bmp; sourceTree = "<group>"; };
+		3AEDB3401E1E29E0000A6B8C /* 21.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 21.png; path = BridgeClient/Resource/21.png; sourceTree = "<group>"; };
+		3AEDB3411E1E29E0000A6B8C /* 22.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 22.bmp; path = BridgeClient/Resource/22.bmp; sourceTree = "<group>"; };
+		3AEDB3421E1E29E0000A6B8C /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 22.png; path = BridgeClient/Resource/22.png; sourceTree = "<group>"; };
+		3AEDB3431E1E29E0000A6B8C /* 23.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 23.bmp; path = BridgeClient/Resource/23.bmp; sourceTree = "<group>"; };
+		3AEDB3441E1E29E0000A6B8C /* 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 23.png; path = BridgeClient/Resource/23.png; sourceTree = "<group>"; };
+		3AEDB3451E1E29E0000A6B8C /* 24.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 24.bmp; path = BridgeClient/Resource/24.bmp; sourceTree = "<group>"; };
+		3AEDB3461E1E29E0000A6B8C /* 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 24.png; path = BridgeClient/Resource/24.png; sourceTree = "<group>"; };
+		3AEDB3471E1E29E0000A6B8C /* 25.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 25.bmp; path = BridgeClient/Resource/25.bmp; sourceTree = "<group>"; };
+		3AEDB3481E1E29E0000A6B8C /* 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 25.png; path = BridgeClient/Resource/25.png; sourceTree = "<group>"; };
+		3AEDB3491E1E29E0000A6B8C /* 26.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 26.bmp; path = BridgeClient/Resource/26.bmp; sourceTree = "<group>"; };
+		3AEDB34A1E1E29E0000A6B8C /* 26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 26.png; path = BridgeClient/Resource/26.png; sourceTree = "<group>"; };
+		3AEDB34B1E1E29E0000A6B8C /* 27.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 27.bmp; path = BridgeClient/Resource/27.bmp; sourceTree = "<group>"; };
+		3AEDB34C1E1E29E0000A6B8C /* 27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 27.png; path = BridgeClient/Resource/27.png; sourceTree = "<group>"; };
+		3AEDB34D1E1E29E0000A6B8C /* 28.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 28.bmp; path = BridgeClient/Resource/28.bmp; sourceTree = "<group>"; };
+		3AEDB34E1E1E29E0000A6B8C /* 28.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 28.png; path = BridgeClient/Resource/28.png; sourceTree = "<group>"; };
+		3AEDB34F1E1E29E0000A6B8C /* 29.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 29.bmp; path = BridgeClient/Resource/29.bmp; sourceTree = "<group>"; };
+		3AEDB3501E1E29E0000A6B8C /* 29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 29.png; path = BridgeClient/Resource/29.png; sourceTree = "<group>"; };
+		3AEDB3511E1E29E0000A6B8C /* 30.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 30.bmp; path = BridgeClient/Resource/30.bmp; sourceTree = "<group>"; };
+		3AEDB3521E1E29E0000A6B8C /* 30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 30.png; path = BridgeClient/Resource/30.png; sourceTree = "<group>"; };
+		3AEDB3531E1E29E0000A6B8C /* 31.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 31.bmp; path = BridgeClient/Resource/31.bmp; sourceTree = "<group>"; };
+		3AEDB3541E1E29E0000A6B8C /* 31.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 31.png; path = BridgeClient/Resource/31.png; sourceTree = "<group>"; };
+		3AEDB3551E1E29E0000A6B8C /* 32.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 32.bmp; path = BridgeClient/Resource/32.bmp; sourceTree = "<group>"; };
+		3AEDB3561E1E29E0000A6B8C /* 32.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 32.png; path = BridgeClient/Resource/32.png; sourceTree = "<group>"; };
+		3AEDB3571E1E29E0000A6B8C /* 33.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 33.bmp; path = BridgeClient/Resource/33.bmp; sourceTree = "<group>"; };
+		3AEDB3581E1E29E0000A6B8C /* 33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 33.png; path = BridgeClient/Resource/33.png; sourceTree = "<group>"; };
+		3AEDB3591E1E29E0000A6B8C /* 34.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 34.bmp; path = BridgeClient/Resource/34.bmp; sourceTree = "<group>"; };
+		3AEDB35A1E1E29E0000A6B8C /* 34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 34.png; path = BridgeClient/Resource/34.png; sourceTree = "<group>"; };
+		3AEDB35B1E1E29E0000A6B8C /* 35.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 35.bmp; path = BridgeClient/Resource/35.bmp; sourceTree = "<group>"; };
+		3AEDB35C1E1E29E0000A6B8C /* 35.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 35.png; path = BridgeClient/Resource/35.png; sourceTree = "<group>"; };
+		3AEDB35D1E1E29E0000A6B8C /* 36.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 36.bmp; path = BridgeClient/Resource/36.bmp; sourceTree = "<group>"; };
+		3AEDB35E1E1E29E0000A6B8C /* 36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 36.png; path = BridgeClient/Resource/36.png; sourceTree = "<group>"; };
+		3AEDB35F1E1E29E0000A6B8C /* 37.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 37.bmp; path = BridgeClient/Resource/37.bmp; sourceTree = "<group>"; };
+		3AEDB3601E1E29E0000A6B8C /* 37.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 37.png; path = BridgeClient/Resource/37.png; sourceTree = "<group>"; };
+		3AEDB3611E1E29E0000A6B8C /* 38.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 38.bmp; path = BridgeClient/Resource/38.bmp; sourceTree = "<group>"; };
+		3AEDB3621E1E29E0000A6B8C /* 38.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 38.png; path = BridgeClient/Resource/38.png; sourceTree = "<group>"; };
+		3AEDB3631E1E29E0000A6B8C /* 39.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 39.bmp; path = BridgeClient/Resource/39.bmp; sourceTree = "<group>"; };
+		3AEDB3641E1E29E0000A6B8C /* 39.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 39.png; path = BridgeClient/Resource/39.png; sourceTree = "<group>"; };
+		3AEDB3651E1E29E0000A6B8C /* 40.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 40.bmp; path = BridgeClient/Resource/40.bmp; sourceTree = "<group>"; };
+		3AEDB3661E1E29E0000A6B8C /* 40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 40.png; path = BridgeClient/Resource/40.png; sourceTree = "<group>"; };
+		3AEDB3671E1E29E0000A6B8C /* 41.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 41.bmp; path = BridgeClient/Resource/41.bmp; sourceTree = "<group>"; };
+		3AEDB3681E1E29E0000A6B8C /* 41.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 41.png; path = BridgeClient/Resource/41.png; sourceTree = "<group>"; };
+		3AEDB3691E1E29E0000A6B8C /* 42.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 42.bmp; path = BridgeClient/Resource/42.bmp; sourceTree = "<group>"; };
+		3AEDB36A1E1E29E0000A6B8C /* 42.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 42.png; path = BridgeClient/Resource/42.png; sourceTree = "<group>"; };
+		3AEDB36B1E1E29E0000A6B8C /* 43.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 43.bmp; path = BridgeClient/Resource/43.bmp; sourceTree = "<group>"; };
+		3AEDB36C1E1E29E0000A6B8C /* 43.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 43.png; path = BridgeClient/Resource/43.png; sourceTree = "<group>"; };
+		3AEDB36D1E1E29E0000A6B8C /* 44.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 44.bmp; path = BridgeClient/Resource/44.bmp; sourceTree = "<group>"; };
+		3AEDB36E1E1E29E0000A6B8C /* 44.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 44.png; path = BridgeClient/Resource/44.png; sourceTree = "<group>"; };
+		3AEDB36F1E1E29E0000A6B8C /* 45.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 45.bmp; path = BridgeClient/Resource/45.bmp; sourceTree = "<group>"; };
+		3AEDB3701E1E29E0000A6B8C /* 45.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 45.png; path = BridgeClient/Resource/45.png; sourceTree = "<group>"; };
+		3AEDB3711E1E29E0000A6B8C /* 46.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 46.bmp; path = BridgeClient/Resource/46.bmp; sourceTree = "<group>"; };
+		3AEDB3721E1E29E0000A6B8C /* 46.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 46.png; path = BridgeClient/Resource/46.png; sourceTree = "<group>"; };
+		3AEDB3731E1E29E0000A6B8C /* 47.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 47.bmp; path = BridgeClient/Resource/47.bmp; sourceTree = "<group>"; };
+		3AEDB3741E1E29E0000A6B8C /* 47.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 47.png; path = BridgeClient/Resource/47.png; sourceTree = "<group>"; };
+		3AEDB3751E1E29E0000A6B8C /* 48.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 48.bmp; path = BridgeClient/Resource/48.bmp; sourceTree = "<group>"; };
+		3AEDB3761E1E29E0000A6B8C /* 48.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = 48.png; path = BridgeClient/Resource/48.png; sourceTree = "<group>"; };
+		3AEDB3771E1E29E0000A6B8C /* 49.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 49.bmp; path = BridgeClient/Resource/49.bmp; sourceTree = "<group>"; };
+		3AEDB3781E1E29E0000A6B8C /* 50.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 50.bmp; path = BridgeClient/Resource/50.bmp; sourceTree = "<group>"; };
+		3AEDB3791E1E29E0000A6B8C /* 51.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 51.bmp; path = BridgeClient/Resource/51.bmp; sourceTree = "<group>"; };
+		3AEDB37A1E1E29E0000A6B8C /* 52.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 52.bmp; path = BridgeClient/Resource/52.bmp; sourceTree = "<group>"; };
+		3AEDB37B1E1E29E0000A6B8C /* 53.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = 53.bmp; path = BridgeClient/Resource/53.bmp; sourceTree = "<group>"; };
+		3AEDB37C1E1E29E0000A6B8C /* ring.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = ring.wav; path = BridgeClient/Resource/ring.wav; sourceTree = "<group>"; };
+		3AEDB37D1E1E29E0000A6B8C /* user.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = user.png; path = BridgeClient/Resource/user.png; sourceTree = "<group>"; };
+		51D790443CCEAA6610C22A7C /* GLPlayBridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GLPlayBridge.cpp; path = "/Users/Talka_Ying/Documents/Xcode/PokerBridge-Qt/BridgeClient/BridgeClient/GLPlayBridge.cpp"; sourceTree = "<absolute>"; };
+		5FA2F2BB42F087B38292F91C /* GLCallBridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = GLCallBridge.cpp; path = "/Users/Talka_Ying/Documents/Xcode/PokerBridge-Qt/BridgeClient/BridgeClient/GLCallBridge.cpp"; sourceTree = "<absolute>"; };
+		8AE8AF9E539BC7E45DCC3D16 /* MainWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MainWindow.h; path = "/Users/Talka_Ying/Documents/Xcode/PokerBridge-Qt/BridgeClient/BridgeClient/MainWindow.h"; sourceTree = "<absolute>"; };
+		8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AGL.framework; path = /System/Library/Frameworks/AGL.framework; sourceTree = "<absolute>"; };
+		95D62C0CF55BCD3D1ED663AE /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = "/Users/Talka_Ying/Documents/Xcode/PokerBridge-Qt/BridgeClient/BridgeClient/main.cpp"; sourceTree = "<absolute>"; };
+		98763FC7F2F2AB73F6CD42CE /* moc_GLPlayBridge.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_GLPlayBridge.cpp; path = "/Users/Talka_Ying/Documents/Xcode/PokerBridge-Qt/BridgeClient/moc_GLPlayBridge.cpp"; sourceTree = "<absolute>"; };
+		9F53BC6BFA7C233C08FFA044 /* GLCallBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GLCallBridge.h; path = "/Users/Talka_Ying/Documents/Xcode/PokerBridge-Qt/BridgeClient/BridgeClient/GLCallBridge.h"; sourceTree = "<absolute>"; };
+		A1A67BEAA744704B29168D39 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = /System/Library/Frameworks/IOKit.framework; sourceTree = "<absolute>"; };
+		A90BC9AC9DC4E4977EB6BF3F /* QtNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtNetwork.framework; path = /usr/local/Cellar/qt5/5.7.1_1/lib/QtNetwork.framework; sourceTree = "<absolute>"; };
+		BE3388F56BA13168E62BDFB2 /* QtOpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QtOpenGL.framework; path = /usr/local/Cellar/qt5/5.7.1_1/lib/QtOpenGL.framework; sourceTree = "<absolute>"; };
+		BFC35685210825F08F751BCA /* GLPlayBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = GLPlayBridge.h; path = "/Users/Talka_Ying/Documents/Xcode/PokerBridge-Qt/BridgeClient/BridgeClient/GLPlayBridge.h"; sourceTree = "<absolute>"; };
+		C4887721104ADC284C2EA8D4 /* MainWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = MainWindow.cpp; path = "/Users/Talka_Ying/Documents/Xcode/PokerBridge-Qt/BridgeClient/BridgeClient/MainWindow.cpp"; sourceTree = "<absolute>"; };
+		D03A6B46795489127C757F38 /* BridgeClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BridgeClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1C730262DD610943685E298 /* BridgeClient.pro */ = {isa = PBXFileReference; lastKnownFileType = text; name = BridgeClient.pro; path = "/Users/Talka_Ying/Documents/Xcode/PokerBridge-Qt/BridgeClient/BridgeClient.pro"; sourceTree = "<absolute>"; };
+		D4B32C2222F82AC56BADEB21 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = /System/Library/Frameworks/OpenGL.framework; sourceTree = "<absolute>"; };
+		F04882D6A0AD9CAFE7703D8F /* moc_MainWindow.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = moc_MainWindow.cpp; path = "/Users/Talka_Ying/Documents/Xcode/PokerBridge-Qt/BridgeClient/moc_MainWindow.cpp"; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1C883685E82D5676953459A /* Link Binary With Libraries */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AEDB3111E1E29CD000A6B8C /* CoreFoundation.framework in Link Binary With Libraries */,
+				3AEDB3121E1E29CD000A6B8C /* GLUT.framework in Link Binary With Libraries */,
+				3AEDB3131E1E29CD000A6B8C /* OpenAL.framework in Link Binary With Libraries */,
+				67DA2D94A212B55CB3220214 /* QtOpenGL.framework in Link Binary With Libraries */,
+				B0B4AB2A156AEB6915024CD7 /* QtWidgets.framework in Link Binary With Libraries */,
+				66C879EFA64576706D527677 /* QtGui.framework in Link Binary With Libraries */,
+				7DACF5E8ADF324CFE0723B2A /* QtCore.framework in Link Binary With Libraries */,
+				A99B2AA0F9CBBDD12BA126A4 /* DiskArbitration.framework in Link Binary With Libraries */,
+				8D267F2E4776F0ECA2F49DC8 /* IOKit.framework in Link Binary With Libraries */,
+				E104B2F0093DA8D2847D8978 /* QtNetwork.framework in Link Binary With Libraries */,
+				8771A8C96E9C391044035D99 /* OpenGL.framework in Link Binary With Libraries */,
+				E45E51A644D5FC9F942ECE55 /* AGL.framework in Link Binary With Libraries */,
+			);
+			name = "Link Binary With Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		25B08E2869634E9BCBA333A2 /* Generated Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1F01AA59E335C2B17B6F2391 /* moc_GLCallBridge.cpp */,
+				98763FC7F2F2AB73F6CD42CE /* moc_GLPlayBridge.cpp */,
+				F04882D6A0AD9CAFE7703D8F /* moc_MainWindow.cpp */,
+			);
+			name = "Generated Sources";
+			sourceTree = "<group>";
+		};
+		2EB56BE3C2D93CDAB0C52E67 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				921F28A591BF28F8F45002AF /* BridgeClient */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		3AEDB3141E1E29D0000A6B8C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				3AEDB3151E1E29E0000A6B8C /* 0.bmp */,
+				3AEDB3161E1E29E0000A6B8C /* 0.png */,
+				3AEDB3171E1E29E0000A6B8C /* 1.bmp */,
+				3AEDB3181E1E29E0000A6B8C /* 1.png */,
+				3AEDB3191E1E29E0000A6B8C /* 2.bmp */,
+				3AEDB31A1E1E29E0000A6B8C /* 2.png */,
+				3AEDB31B1E1E29E0000A6B8C /* 3.bmp */,
+				3AEDB31C1E1E29E0000A6B8C /* 3.png */,
+				3AEDB31D1E1E29E0000A6B8C /* 4.bmp */,
+				3AEDB31E1E1E29E0000A6B8C /* 4.png */,
+				3AEDB31F1E1E29E0000A6B8C /* 5.bmp */,
+				3AEDB3201E1E29E0000A6B8C /* 5.png */,
+				3AEDB3211E1E29E0000A6B8C /* 6.bmp */,
+				3AEDB3221E1E29E0000A6B8C /* 6.png */,
+				3AEDB3231E1E29E0000A6B8C /* 7.bmp */,
+				3AEDB3241E1E29E0000A6B8C /* 7.png */,
+				3AEDB3251E1E29E0000A6B8C /* 8.bmp */,
+				3AEDB3261E1E29E0000A6B8C /* 8.png */,
+				3AEDB3271E1E29E0000A6B8C /* 9.bmp */,
+				3AEDB3281E1E29E0000A6B8C /* 9.png */,
+				3AEDB3291E1E29E0000A6B8C /* 10.bmp */,
+				3AEDB32A1E1E29E0000A6B8C /* 10.png */,
+				3AEDB32B1E1E29E0000A6B8C /* 11.bmp */,
+				3AEDB32C1E1E29E0000A6B8C /* 11.png */,
+				3AEDB32D1E1E29E0000A6B8C /* 12.bmp */,
+				3AEDB32E1E1E29E0000A6B8C /* 12.png */,
+				3AEDB32F1E1E29E0000A6B8C /* 13.bmp */,
+				3AEDB3301E1E29E0000A6B8C /* 13.png */,
+				3AEDB3311E1E29E0000A6B8C /* 14.bmp */,
+				3AEDB3321E1E29E0000A6B8C /* 14.png */,
+				3AEDB3331E1E29E0000A6B8C /* 15.bmp */,
+				3AEDB3341E1E29E0000A6B8C /* 15.png */,
+				3AEDB3351E1E29E0000A6B8C /* 16.bmp */,
+				3AEDB3361E1E29E0000A6B8C /* 16.png */,
+				3AEDB3371E1E29E0000A6B8C /* 17.bmp */,
+				3AEDB3381E1E29E0000A6B8C /* 17.png */,
+				3AEDB3391E1E29E0000A6B8C /* 18.bmp */,
+				3AEDB33A1E1E29E0000A6B8C /* 18.png */,
+				3AEDB33B1E1E29E0000A6B8C /* 19.bmp */,
+				3AEDB33C1E1E29E0000A6B8C /* 19.png */,
+				3AEDB33D1E1E29E0000A6B8C /* 20.bmp */,
+				3AEDB33E1E1E29E0000A6B8C /* 20.png */,
+				3AEDB33F1E1E29E0000A6B8C /* 21.bmp */,
+				3AEDB3401E1E29E0000A6B8C /* 21.png */,
+				3AEDB3411E1E29E0000A6B8C /* 22.bmp */,
+				3AEDB3421E1E29E0000A6B8C /* 22.png */,
+				3AEDB3431E1E29E0000A6B8C /* 23.bmp */,
+				3AEDB3441E1E29E0000A6B8C /* 23.png */,
+				3AEDB3451E1E29E0000A6B8C /* 24.bmp */,
+				3AEDB3461E1E29E0000A6B8C /* 24.png */,
+				3AEDB3471E1E29E0000A6B8C /* 25.bmp */,
+				3AEDB3481E1E29E0000A6B8C /* 25.png */,
+				3AEDB3491E1E29E0000A6B8C /* 26.bmp */,
+				3AEDB34A1E1E29E0000A6B8C /* 26.png */,
+				3AEDB34B1E1E29E0000A6B8C /* 27.bmp */,
+				3AEDB34C1E1E29E0000A6B8C /* 27.png */,
+				3AEDB34D1E1E29E0000A6B8C /* 28.bmp */,
+				3AEDB34E1E1E29E0000A6B8C /* 28.png */,
+				3AEDB34F1E1E29E0000A6B8C /* 29.bmp */,
+				3AEDB3501E1E29E0000A6B8C /* 29.png */,
+				3AEDB3511E1E29E0000A6B8C /* 30.bmp */,
+				3AEDB3521E1E29E0000A6B8C /* 30.png */,
+				3AEDB3531E1E29E0000A6B8C /* 31.bmp */,
+				3AEDB3541E1E29E0000A6B8C /* 31.png */,
+				3AEDB3551E1E29E0000A6B8C /* 32.bmp */,
+				3AEDB3561E1E29E0000A6B8C /* 32.png */,
+				3AEDB3571E1E29E0000A6B8C /* 33.bmp */,
+				3AEDB3581E1E29E0000A6B8C /* 33.png */,
+				3AEDB3591E1E29E0000A6B8C /* 34.bmp */,
+				3AEDB35A1E1E29E0000A6B8C /* 34.png */,
+				3AEDB35B1E1E29E0000A6B8C /* 35.bmp */,
+				3AEDB35C1E1E29E0000A6B8C /* 35.png */,
+				3AEDB35D1E1E29E0000A6B8C /* 36.bmp */,
+				3AEDB35E1E1E29E0000A6B8C /* 36.png */,
+				3AEDB35F1E1E29E0000A6B8C /* 37.bmp */,
+				3AEDB3601E1E29E0000A6B8C /* 37.png */,
+				3AEDB3611E1E29E0000A6B8C /* 38.bmp */,
+				3AEDB3621E1E29E0000A6B8C /* 38.png */,
+				3AEDB3631E1E29E0000A6B8C /* 39.bmp */,
+				3AEDB3641E1E29E0000A6B8C /* 39.png */,
+				3AEDB3651E1E29E0000A6B8C /* 40.bmp */,
+				3AEDB3661E1E29E0000A6B8C /* 40.png */,
+				3AEDB3671E1E29E0000A6B8C /* 41.bmp */,
+				3AEDB3681E1E29E0000A6B8C /* 41.png */,
+				3AEDB3691E1E29E0000A6B8C /* 42.bmp */,
+				3AEDB36A1E1E29E0000A6B8C /* 42.png */,
+				3AEDB36B1E1E29E0000A6B8C /* 43.bmp */,
+				3AEDB36C1E1E29E0000A6B8C /* 43.png */,
+				3AEDB36D1E1E29E0000A6B8C /* 44.bmp */,
+				3AEDB36E1E1E29E0000A6B8C /* 44.png */,
+				3AEDB36F1E1E29E0000A6B8C /* 45.bmp */,
+				3AEDB3701E1E29E0000A6B8C /* 45.png */,
+				3AEDB3711E1E29E0000A6B8C /* 46.bmp */,
+				3AEDB3721E1E29E0000A6B8C /* 46.png */,
+				3AEDB3731E1E29E0000A6B8C /* 47.bmp */,
+				3AEDB3741E1E29E0000A6B8C /* 47.png */,
+				3AEDB3751E1E29E0000A6B8C /* 48.bmp */,
+				3AEDB3761E1E29E0000A6B8C /* 48.png */,
+				3AEDB3771E1E29E0000A6B8C /* 49.bmp */,
+				3AEDB3781E1E29E0000A6B8C /* 50.bmp */,
+				3AEDB3791E1E29E0000A6B8C /* 51.bmp */,
+				3AEDB37A1E1E29E0000A6B8C /* 52.bmp */,
+				3AEDB37B1E1E29E0000A6B8C /* 53.bmp */,
+				3AEDB37C1E1E29E0000A6B8C /* ring.wav */,
+				3AEDB37D1E1E29E0000A6B8C /* user.png */,
+			);
+			name = Resource;
+			sourceTree = "<group>";
+		};
+		4A67268FEA0A56F5289E72C2 /* header */ = {
+			isa = PBXGroup;
+			children = (
+				36132330D49E1542337FDF2D /* alut.h */,
+			);
+			name = header;
+			sourceTree = "<group>";
+		};
+		74B182DB50CB5611B5C1C297 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D1C730262DD610943685E298 /* BridgeClient.pro */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		921F28A591BF28F8F45002AF /* BridgeClient */ = {
+			isa = PBXGroup;
+			children = (
+				5FA2F2BB42F087B38292F91C /* GLCallBridge.cpp */,
+				51D790443CCEAA6610C22A7C /* GLPlayBridge.cpp */,
+				95D62C0CF55BCD3D1ED663AE /* main.cpp */,
+				C4887721104ADC284C2EA8D4 /* MainWindow.cpp */,
+				9F53BC6BFA7C233C08FFA044 /* GLCallBridge.h */,
+				BFC35685210825F08F751BCA /* GLPlayBridge.h */,
+				8AE8AF9E539BC7E45DCC3D16 /* MainWindow.h */,
+				4A67268FEA0A56F5289E72C2 /* header */,
+			);
+			name = BridgeClient;
+			sourceTree = "<group>";
+		};
+		AF39DD055C3EF8226FBE929D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3AEDB30E1E1E29CD000A6B8C /* CoreFoundation.framework */,
+				3AEDB30F1E1E29CD000A6B8C /* GLUT.framework */,
+				3AEDB3101E1E29CD000A6B8C /* OpenAL.framework */,
+				BE3388F56BA13168E62BDFB2 /* QtOpenGL.framework */,
+				0DA7A73C7010638164DD6E44 /* QtWidgets.framework */,
+				0A7154F3F5A651E46539DF2A /* QtGui.framework */,
+				2EA41A90C67CBB500EA8473F /* QtCore.framework */,
+				2B774D8E4178765CE52EAAF5 /* DiskArbitration.framework */,
+				A1A67BEAA744704B29168D39 /* IOKit.framework */,
+				A90BC9AC9DC4E4977EB6BF3F /* QtNetwork.framework */,
+				D4B32C2222F82AC56BADEB21 /* OpenGL.framework */,
+				8D9815BDB5BD9F90D2BC05C5 /* AGL.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8C543AB96796ECAA2E65C57 /* BridgeClient */ = {
+			isa = PBXGroup;
+			children = (
+				3AEDB3141E1E29D0000A6B8C /* Resource */,
+				2EB56BE3C2D93CDAB0C52E67 /* Sources */,
+				25B08E2869634E9BCBA333A2 /* Generated Sources */,
+				74B182DB50CB5611B5C1C297 /* Supporting Files */,
+				AF39DD055C3EF8226FBE929D /* Frameworks */,
+				FE0A091FDBFB3E9C31B7A1BD /* Products */,
+			);
+			name = BridgeClient;
+			sourceTree = "<group>";
+		};
+		FE0A091FDBFB3E9C31B7A1BD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D03A6B46795489127C757F38 /* BridgeClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		17EF82196022CDC54AF84BB0 /* BridgeClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "BridgeClient" */;
+			buildPhases = (
+				F7E50F631C51CD5B5DC0BC43 /* Compile Sources */,
+				D1C883685E82D5676953459A /* Link Binary With Libraries */,
+				30414803F31797EB689AE508 /* Copy Bundle Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				06A81405DC52742EDC9773BB /* PBXTargetDependency */,
+			);
+			name = BridgeClient;
+			productName = BridgeClient;
+			productReference = D03A6B46795489127C757F38 /* BridgeClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6DB9C3763D02B1415CD9D565 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				TargetAttributes = {
+					17EF82196022CDC54AF84BB0 = {
+						DevelopmentTeam = BX9CCBZ79L;
+					};
+					9D81AC124274FC265F152F6E = {
+						DevelopmentTeam = BX9CCBZ79L;
+					};
+				};
+			};
+			buildConfigurationList = DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "BridgeClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E8C543AB96796ECAA2E65C57 /* BridgeClient */;
+			productRefGroup = FE0A091FDBFB3E9C31B7A1BD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				17EF82196022CDC54AF84BB0 /* BridgeClient */,
+				9D81AC124274FC265F152F6E /* Qt Preprocess */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30414803F31797EB689AE508 /* Copy Bundle Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AEDB3BE1E1E29E0000A6B8C /* 32.bmp in Copy Bundle Resources */,
+				3AEDB3B91E1E29E0000A6B8C /* 29.png in Copy Bundle Resources */,
+				3AEDB3B11E1E29E0000A6B8C /* 25.png in Copy Bundle Resources */,
+				3AEDB3A41E1E29E0000A6B8C /* 19.bmp in Copy Bundle Resources */,
+				3AEDB3DD1E1E29E0000A6B8C /* 47.png in Copy Bundle Resources */,
+				3AEDB3971E1E29E0000A6B8C /* 12.png in Copy Bundle Resources */,
+				3AEDB3D31E1E29E0000A6B8C /* 42.png in Copy Bundle Resources */,
+				3AEDB3D21E1E29E0000A6B8C /* 42.bmp in Copy Bundle Resources */,
+				3AEDB3CD1E1E29E0000A6B8C /* 39.png in Copy Bundle Resources */,
+				3AEDB3BC1E1E29E0000A6B8C /* 31.bmp in Copy Bundle Resources */,
+				3AEDB3C61E1E29E0000A6B8C /* 36.bmp in Copy Bundle Resources */,
+				3AEDB3E61E1E29E0000A6B8C /* user.png in Copy Bundle Resources */,
+				3AEDB3B01E1E29E0000A6B8C /* 25.bmp in Copy Bundle Resources */,
+				3AEDB38C1E1E29E0000A6B8C /* 7.bmp in Copy Bundle Resources */,
+				3AEDB3E21E1E29E0000A6B8C /* 51.bmp in Copy Bundle Resources */,
+				3AEDB3A31E1E29E0000A6B8C /* 18.png in Copy Bundle Resources */,
+				3AEDB3C71E1E29E0000A6B8C /* 36.png in Copy Bundle Resources */,
+				3AEDB38B1E1E29E0000A6B8C /* 6.png in Copy Bundle Resources */,
+				3AEDB3D41E1E29E0000A6B8C /* 43.bmp in Copy Bundle Resources */,
+				3AEDB3981E1E29E0000A6B8C /* 13.bmp in Copy Bundle Resources */,
+				3AEDB3881E1E29E0000A6B8C /* 5.bmp in Copy Bundle Resources */,
+				3AEDB38A1E1E29E0000A6B8C /* 6.bmp in Copy Bundle Resources */,
+				3AEDB3CC1E1E29E0000A6B8C /* 39.bmp in Copy Bundle Resources */,
+				3AEDB39E1E1E29E0000A6B8C /* 16.bmp in Copy Bundle Resources */,
+				3AEDB3831E1E29E0000A6B8C /* 2.png in Copy Bundle Resources */,
+				3AEDB3821E1E29E0000A6B8C /* 2.bmp in Copy Bundle Resources */,
+				3AEDB3DB1E1E29E0000A6B8C /* 46.png in Copy Bundle Resources */,
+				3AEDB3C21E1E29E0000A6B8C /* 34.bmp in Copy Bundle Resources */,
+				3AEDB3D51E1E29E0000A6B8C /* 43.png in Copy Bundle Resources */,
+				3AEDB3E01E1E29E0000A6B8C /* 49.bmp in Copy Bundle Resources */,
+				3AEDB3C51E1E29E0000A6B8C /* 35.png in Copy Bundle Resources */,
+				3AEDB3D81E1E29E0000A6B8C /* 45.bmp in Copy Bundle Resources */,
+				3AEDB38F1E1E29E0000A6B8C /* 8.png in Copy Bundle Resources */,
+				3AEDB3A61E1E29E0000A6B8C /* 20.bmp in Copy Bundle Resources */,
+				3AEDB38E1E1E29E0000A6B8C /* 8.bmp in Copy Bundle Resources */,
+				3AEDB39B1E1E29E0000A6B8C /* 14.png in Copy Bundle Resources */,
+				3AEDB3AF1E1E29E0000A6B8C /* 24.png in Copy Bundle Resources */,
+				3AEDB3E51E1E29E0000A6B8C /* ring.wav in Copy Bundle Resources */,
+				3AEDB3C41E1E29E0000A6B8C /* 35.bmp in Copy Bundle Resources */,
+				3AEDB3CB1E1E29E0000A6B8C /* 38.png in Copy Bundle Resources */,
+				3AEDB3D61E1E29E0000A6B8C /* 44.bmp in Copy Bundle Resources */,
+				3AEDB3801E1E29E0000A6B8C /* 1.bmp in Copy Bundle Resources */,
+				3AEDB3921E1E29E0000A6B8C /* 10.bmp in Copy Bundle Resources */,
+				3AEDB3AE1E1E29E0000A6B8C /* 24.bmp in Copy Bundle Resources */,
+				3AEDB3AB1E1E29E0000A6B8C /* 22.png in Copy Bundle Resources */,
+				3AEDB3941E1E29E0000A6B8C /* 11.bmp in Copy Bundle Resources */,
+				3AEDB3991E1E29E0000A6B8C /* 13.png in Copy Bundle Resources */,
+				3AEDB3901E1E29E0000A6B8C /* 9.bmp in Copy Bundle Resources */,
+				3AEDB3AC1E1E29E0000A6B8C /* 23.bmp in Copy Bundle Resources */,
+				3AEDB3861E1E29E0000A6B8C /* 4.bmp in Copy Bundle Resources */,
+				3AEDB3BD1E1E29E0000A6B8C /* 31.png in Copy Bundle Resources */,
+				3AEDB3A71E1E29E0000A6B8C /* 20.png in Copy Bundle Resources */,
+				3AEDB3D91E1E29E0000A6B8C /* 45.png in Copy Bundle Resources */,
+				3AEDB3851E1E29E0000A6B8C /* 3.png in Copy Bundle Resources */,
+				3AEDB3811E1E29E0000A6B8C /* 1.png in Copy Bundle Resources */,
+				3AEDB3931E1E29E0000A6B8C /* 10.png in Copy Bundle Resources */,
+				3AEDB3A81E1E29E0000A6B8C /* 21.bmp in Copy Bundle Resources */,
+				3AEDB3911E1E29E0000A6B8C /* 9.png in Copy Bundle Resources */,
+				3AEDB39F1E1E29E0000A6B8C /* 16.png in Copy Bundle Resources */,
+				3AEDB3AD1E1E29E0000A6B8C /* 23.png in Copy Bundle Resources */,
+				3AEDB3B41E1E29E0000A6B8C /* 27.bmp in Copy Bundle Resources */,
+				3AEDB3841E1E29E0000A6B8C /* 3.bmp in Copy Bundle Resources */,
+				3AEDB3D01E1E29E0000A6B8C /* 41.bmp in Copy Bundle Resources */,
+				3AEDB3E11E1E29E0000A6B8C /* 50.bmp in Copy Bundle Resources */,
+				3AEDB3E31E1E29E0000A6B8C /* 52.bmp in Copy Bundle Resources */,
+				3AEDB3C01E1E29E0000A6B8C /* 33.bmp in Copy Bundle Resources */,
+				3AEDB37F1E1E29E0000A6B8C /* 0.png in Copy Bundle Resources */,
+				3AEDB3A11E1E29E0000A6B8C /* 17.png in Copy Bundle Resources */,
+				3AEDB3951E1E29E0000A6B8C /* 11.png in Copy Bundle Resources */,
+				3AEDB3B31E1E29E0000A6B8C /* 26.png in Copy Bundle Resources */,
+				3AEDB3A91E1E29E0000A6B8C /* 21.png in Copy Bundle Resources */,
+				3AEDB3DA1E1E29E0000A6B8C /* 46.bmp in Copy Bundle Resources */,
+				3AEDB3B51E1E29E0000A6B8C /* 27.png in Copy Bundle Resources */,
+				3AEDB3CA1E1E29E0000A6B8C /* 38.bmp in Copy Bundle Resources */,
+				3AEDB3D11E1E29E0000A6B8C /* 41.png in Copy Bundle Resources */,
+				3AEDB3961E1E29E0000A6B8C /* 12.bmp in Copy Bundle Resources */,
+				3AEDB3C31E1E29E0000A6B8C /* 34.png in Copy Bundle Resources */,
+				3AEDB3C81E1E29E0000A6B8C /* 37.bmp in Copy Bundle Resources */,
+				3AEDB39A1E1E29E0000A6B8C /* 14.bmp in Copy Bundle Resources */,
+				3AEDB3AA1E1E29E0000A6B8C /* 22.bmp in Copy Bundle Resources */,
+				3AEDB3BF1E1E29E0000A6B8C /* 32.png in Copy Bundle Resources */,
+				3AEDB3C91E1E29E0000A6B8C /* 37.png in Copy Bundle Resources */,
+				3AEDB3BA1E1E29E0000A6B8C /* 30.bmp in Copy Bundle Resources */,
+				3AEDB3CF1E1E29E0000A6B8C /* 40.png in Copy Bundle Resources */,
+				3AEDB3B81E1E29E0000A6B8C /* 29.bmp in Copy Bundle Resources */,
+				3AEDB39C1E1E29E0000A6B8C /* 15.bmp in Copy Bundle Resources */,
+				3AEDB3B61E1E29E0000A6B8C /* 28.bmp in Copy Bundle Resources */,
+				3AEDB3891E1E29E0000A6B8C /* 5.png in Copy Bundle Resources */,
+				3AEDB3A01E1E29E0000A6B8C /* 17.bmp in Copy Bundle Resources */,
+				3AEDB3A21E1E29E0000A6B8C /* 18.bmp in Copy Bundle Resources */,
+				3AEDB3C11E1E29E0000A6B8C /* 33.png in Copy Bundle Resources */,
+				3AEDB3CE1E1E29E0000A6B8C /* 40.bmp in Copy Bundle Resources */,
+				3AEDB3DC1E1E29E0000A6B8C /* 47.bmp in Copy Bundle Resources */,
+				3AEDB3E41E1E29E0000A6B8C /* 53.bmp in Copy Bundle Resources */,
+				3AEDB3BB1E1E29E0000A6B8C /* 30.png in Copy Bundle Resources */,
+				3AEDB3B71E1E29E0000A6B8C /* 28.png in Copy Bundle Resources */,
+				3AEDB3A51E1E29E0000A6B8C /* 19.png in Copy Bundle Resources */,
+				3AEDB3B21E1E29E0000A6B8C /* 26.bmp in Copy Bundle Resources */,
+				3AEDB3D71E1E29E0000A6B8C /* 44.png in Copy Bundle Resources */,
+				3AEDB3871E1E29E0000A6B8C /* 4.png in Copy Bundle Resources */,
+				3AEDB3DF1E1E29E0000A6B8C /* 48.png in Copy Bundle Resources */,
+				3AEDB37E1E1E29E0000A6B8C /* 0.bmp in Copy Bundle Resources */,
+				3AEDB38D1E1E29E0000A6B8C /* 7.png in Copy Bundle Resources */,
+				3AEDB3DE1E1E29E0000A6B8C /* 48.bmp in Copy Bundle Resources */,
+				3AEDB39D1E1E29E0000A6B8C /* 15.png in Copy Bundle Resources */,
+			);
+			name = "Copy Bundle Resources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5E618435888B9D49F8540165 /* Qt Qmake */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Qmake";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Talka_Ying/Documents/Xcode/PokerBridge-Qt/BridgeClient/ -f BridgeClient.xcodeproj/qt_makeqmake.mak";
+			showEnvVarsInLog = 0;
+		};
+		7EF0942E79C014DCEC8976BC /* Qt Preprocessors */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "Qt Preprocessors";
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "make -C /Users/Talka_Ying/Documents/Xcode/PokerBridge-Qt/BridgeClient/ -f BridgeClient.xcodeproj/qt_preprocess.mak";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F7E50F631C51CD5B5DC0BC43 /* Compile Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACEC66E197D7EDD57BD9E698 /* GLCallBridge.cpp in Compile Sources */,
+				0809297AB86D7A49846A3197 /* GLPlayBridge.cpp in Compile Sources */,
+				D7753E629CBA27E8E326BC10 /* main.cpp in Compile Sources */,
+				FF209A800FC7B68C9DAF2A74 /* MainWindow.cpp in Compile Sources */,
+				DD4DC29550086D694AFB42D8 /* moc_GLCallBridge.cpp in Compile Sources */,
+				7370F8EA074851AEBFF0AD5F /* moc_GLPlayBridge.cpp in Compile Sources */,
+				1586C0A9BDD0F0F481B32D09 /* moc_MainWindow.cpp in Compile Sources */,
+			);
+			name = "Compile Sources";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		06A81405DC52742EDC9773BB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D81AC124274FC265F152F6E /* Qt Preprocess */;
+			targetProxy = 3AEDB30D1E1E29B3000A6B8C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		339EE1B2CC4FC24589A0EA95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = BX9CCBZ79L;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/usr/local/Cellar/qt5/5.7.1_1/lib,
+					/usr/local/Cellar/qt5/5.7.1_1/lib,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					.,
+					.,
+					/usr/local/Cellar/qt5/5.7.1_1/lib/QtOpenGL.framework/Headers,
+					/usr/local/Cellar/qt5/5.7.1_1/lib/QtWidgets.framework/Headers,
+					/usr/local/Cellar/qt5/5.7.1_1/lib/QtGui.framework/Headers,
+					/usr/local/Cellar/qt5/5.7.1_1/lib/QtNetwork.framework/Headers,
+					/usr/local/Cellar/qt5/5.7.1_1/lib/QtCore.framework/Headers,
+					.,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AGL.framework/Headers,
+					"/usr/local/Cellar/qt5/5.7.1_1/mkspecs/macx-clang",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/qt5/5.7.1_1/lib,
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-O2",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_OPENGL_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-O2",
+					"-std=gnu++11",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_OPENGL_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-stdlib=libc++",
+					"-F/usr/local/Cellar/qt5/5.7.1_1/lib",
+				);
+				PRODUCT_NAME = BridgeClient;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = macosx;
+				SYMROOT = "/Users/Talka_Ying/Documents/Xcode/PokerBridge-Qt/BridgeClient/";
+			};
+			name = Release;
+		};
+		3AA6C32AC930069E80220CF1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = x86_64;
+				CC = /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = BX9CCBZ79L;
+				DYLIB_COMPATIBILITY_VERSION = 1.0;
+				DYLIB_CURRENT_VERSION = 1.0.0;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					/usr/local/Cellar/qt5/5.7.1_1/lib,
+					/usr/local/Cellar/qt5/5.7.1_1/lib,
+				);
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				HEADER_SEARCH_PATHS = (
+					.,
+					.,
+					/usr/local/Cellar/qt5/5.7.1_1/lib/QtOpenGL.framework/Headers,
+					/usr/local/Cellar/qt5/5.7.1_1/lib/QtWidgets.framework/Headers,
+					/usr/local/Cellar/qt5/5.7.1_1/lib/QtGui.framework/Headers,
+					/usr/local/Cellar/qt5/5.7.1_1/lib/QtNetwork.framework/Headers,
+					/usr/local/Cellar/qt5/5.7.1_1/lib/QtCore.framework/Headers,
+					.,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/OpenGL.framework/Headers,
+					/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AGL.framework/Headers,
+					"/usr/local/Cellar/qt5/5.7.1_1/mkspecs/macx-clang",
+				);
+				INFOPLIST_FILE = Info.plist;
+				LDPLUSPLUS = "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++";
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/Cellar/qt5/5.7.1_1/lib,
+					/System/Library/Frameworks/,
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_CFLAGS = (
+					"-pipe",
+					"-O2",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_OPENGL_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_CPLUSPLUSFLAGS = (
+					"-pipe",
+					"-stdlib=libc++",
+					"-O2",
+					"-std=gnu++11",
+					"-Wall",
+					"-W",
+					"-fPIC",
+					"-DQT_NO_DEBUG",
+					"-DQT_OPENGL_LIB",
+					"-DQT_WIDGETS_LIB",
+					"-DQT_GUI_LIB",
+					"-DQT_NETWORK_LIB",
+					"-DQT_CORE_LIB",
+				);
+				OTHER_LDFLAGS = (
+					"-headerpad_max_install_names",
+					"-stdlib=libc++",
+					"-F/usr/local/Cellar/qt5/5.7.1_1/lib",
+				);
+				PRODUCT_NAME = BridgeClient;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = macosx;
+				SYMROOT = "/Users/Talka_Ying/Documents/Xcode/PokerBridge-Qt/BridgeClient/";
+			};
+			name = Debug;
+		};
+		6666AA5E688052234F6758D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEVELOPMENT_TEAM = BX9CCBZ79L;
+				ENABLE_BITCODE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				PRODUCT_NAME = BridgeClient;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		77418F46922677BB04ED38DD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = BX9CCBZ79L;
+				ENABLE_BITCODE = NO;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = BridgeClient;
+				QT_LIBRARY_SUFFIX = "";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CC3B5D2136C7CD6A5CF5A59 /* Build configuration list for PBXNativeTarget "BridgeClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77418F46922677BB04ED38DD /* Debug */,
+				6666AA5E688052234F6758D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DAC4C1AA5EDEA1C85E9CA5E6 /* Build configuration list for PBXProject "BridgeClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3AA6C32AC930069E80220CF1 /* Debug */,
+				339EE1B2CC4FC24589A0EA95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6DB9C3763D02B1415CD9D565 /* Project object */;
+}
