@@ -4,6 +4,8 @@
 
 #include "CoreFoundation/CoreFoundation.h"
 
+#define POKER_CALL_BUTTON_NUMBER 49
+
 ALboolean MainWindow::LoadALData()
 {
     // Variables to load into.
@@ -335,18 +337,20 @@ void MainWindow::GUI_initial()
 
 	callingBridge = new GLCallBridge(0,0);
     
-    callbutton = new QPushButton [49];
+    callbutton = new QPushButton* [POKER_CALL_BUTTON_NUMBER];
     QPushButton *callpass = new QPushButton("Pass");
     QGridLayout *gridLayout_call =  new QGridLayout();
     
-    for (unsigned int i=0; i<49; ++i) {
+    for (unsigned int i=0; i<POKER_CALL_BUTTON_NUMBER; ++i) {
         // i/7指的是第幾level   i%7指的是7種喊牌
         // 將喊牌圖案以同一level放在同一列
         // 1S=5  第0層(5/7)  第5種喊牌(5%7)
         // 6H=39 第5層(39/7) 第4種喊牌(39%7)
-        callbutton[i].setIcon(QIcon(QString("%1/%2.png").arg(resourcesPath,QString::number(i))));
-        callbutton[i].setIconSize(QSize(50,21));
-        gridLayout_call->addWidget(&callbutton[i],i/7,i%7);
+        callbutton[i] = new QPushButton;
+        callbutton[i]->setIcon(QIcon(QString("%1/%2.png").arg(resourcesPath,QString::number(i))));
+        callbutton[i]->setIconSize(QSize(50,21));
+        gridLayout_call->addWidget(callbutton[i],i/7,i%7);
+        connect(callbutton[i],SIGNAL(clicked()),this,SLOT(callButtonClick()));
     }
     
     gridLayout_call->addWidget(callpass,7,0,1,-1);
@@ -382,58 +386,9 @@ void MainWindow::GUI_initial()
     gridLayout_4->addWidget(callingBridge,0,0,1,-1);
     gridLayout_4->addLayout(gridLayout_call,1,0,1,1);
     gridLayout_4->addLayout(gridLayout_user, 1, 1,1,1);
-    {   //所有的按鈕都要連接....... 所以就.......
-        connect(&callbutton[0],SIGNAL(clicked()),this,SLOT(button0()));
-        connect(&callbutton[1],SIGNAL(clicked()),this,SLOT(button1()));
-        connect(&callbutton[2],SIGNAL(clicked()),this,SLOT(button2()));
-        connect(&callbutton[3],SIGNAL(clicked()),this,SLOT(button3()));
-        connect(&callbutton[4],SIGNAL(clicked()),this,SLOT(button4()));
-        connect(&callbutton[5],SIGNAL(clicked()),this,SLOT(button5()));
-        connect(&callbutton[6],SIGNAL(clicked()),this,SLOT(button6()));
-        connect(&callbutton[7],SIGNAL(clicked()),this,SLOT(button7()));
-        connect(&callbutton[8],SIGNAL(clicked()),this,SLOT(button8()));
-        connect(&callbutton[9],SIGNAL(clicked()),this,SLOT(button9()));
-        connect(&callbutton[10],SIGNAL(clicked()),this,SLOT(button10()));
-        connect(&callbutton[11],SIGNAL(clicked()),this,SLOT(button11()));
-        connect(&callbutton[12],SIGNAL(clicked()),this,SLOT(button12()));
-        connect(&callbutton[13],SIGNAL(clicked()),this,SLOT(button13()));
-        connect(&callbutton[14],SIGNAL(clicked()),this,SLOT(button14()));
-        connect(&callbutton[15],SIGNAL(clicked()),this,SLOT(button15()));
-        connect(&callbutton[16],SIGNAL(clicked()),this,SLOT(button16()));
-        connect(&callbutton[17],SIGNAL(clicked()),this,SLOT(button17()));
-        connect(&callbutton[18],SIGNAL(clicked()),this,SLOT(button18()));
-        connect(&callbutton[19],SIGNAL(clicked()),this,SLOT(button19()));
-        connect(&callbutton[20],SIGNAL(clicked()),this,SLOT(button20()));
-        connect(&callbutton[21],SIGNAL(clicked()),this,SLOT(button21()));
-        connect(&callbutton[22],SIGNAL(clicked()),this,SLOT(button22()));
-        connect(&callbutton[23],SIGNAL(clicked()),this,SLOT(button23()));
-        connect(&callbutton[24],SIGNAL(clicked()),this,SLOT(button24()));
-        connect(&callbutton[25],SIGNAL(clicked()),this,SLOT(button25()));
-        connect(&callbutton[26],SIGNAL(clicked()),this,SLOT(button26()));
-        connect(&callbutton[27],SIGNAL(clicked()),this,SLOT(button27()));
-        connect(&callbutton[28],SIGNAL(clicked()),this,SLOT(button28()));
-        connect(&callbutton[29],SIGNAL(clicked()),this,SLOT(button29()));
-        connect(&callbutton[30],SIGNAL(clicked()),this,SLOT(button30()));
-        connect(&callbutton[31],SIGNAL(clicked()),this,SLOT(button31()));
-        connect(&callbutton[32],SIGNAL(clicked()),this,SLOT(button32()));
-        connect(&callbutton[33],SIGNAL(clicked()),this,SLOT(button33()));
-        connect(&callbutton[34],SIGNAL(clicked()),this,SLOT(button34()));
-        connect(&callbutton[35],SIGNAL(clicked()),this,SLOT(button35()));
-        connect(&callbutton[36],SIGNAL(clicked()),this,SLOT(button36()));
-        connect(&callbutton[37],SIGNAL(clicked()),this,SLOT(button37()));
-        connect(&callbutton[38],SIGNAL(clicked()),this,SLOT(button38()));
-        connect(&callbutton[39],SIGNAL(clicked()),this,SLOT(button39()));
-        connect(&callbutton[40],SIGNAL(clicked()),this,SLOT(button40()));
-        connect(&callbutton[41],SIGNAL(clicked()),this,SLOT(button41()));
-        connect(&callbutton[42],SIGNAL(clicked()),this,SLOT(button42()));
-        connect(&callbutton[43],SIGNAL(clicked()),this,SLOT(button43()));
-        connect(&callbutton[44],SIGNAL(clicked()),this,SLOT(button44()));
-        connect(&callbutton[45],SIGNAL(clicked()),this,SLOT(button45()));
-        connect(&callbutton[46],SIGNAL(clicked()),this,SLOT(button46()));
-        connect(&callbutton[47],SIGNAL(clicked()),this,SLOT(button47()));
-        connect(&callbutton[48],SIGNAL(clicked()),this,SLOT(button48()));
-        connect(callpass,SIGNAL(clicked()),this,SLOT(button_pass()));
-    }
+
+    connect(callpass,SIGNAL(clicked()),this,SLOT(button_pass()));
+
     connect(this,SIGNAL(callingsend_signal(int)),this,SLOT(callingsend_slot(int)));
     stackedWidget2->addWidget(callingPage);
     
@@ -666,7 +621,7 @@ void MainWindow::readyRead()
                         //將目前"喊到王牌"之前的按鈕設定為不可按
                         for(int i=trump;i<=now_call;++i)
                         {
-                            callbutton[i].setEnabled(0);
+                            callbutton[i]->setEnabled(0);
                         }  
                         trump=now_call+1;
                     }
@@ -926,8 +881,8 @@ void MainWindow::readyRead()
                                     SNPplay_userEdit[i].clear();
                                 }
                                 //把callPage裡的button都重新設為可按
-                                for(int i=0;i<49;++i)
-                                    callbutton[i].setEnabled(1);
+                                for(int i=0;i<POKER_CALL_BUTTON_NUMBER;++i)
+                                    callbutton[i]->setEnabled(1);
                                 //重設各值為0
                                 trump=0;
                                 ourScore_number=0;
@@ -966,9 +921,11 @@ void MainWindow::readyRead()
 // server. (see the connect() call in the MainWindow constructor).
 void MainWindow::connected()
 {
-    // Flip over to the chat page: 為了方便所以更改!!!
     stackedWidget->setCurrentWidget(secondFrame);
-	stackedWidget2->setCurrentWidget(waitingPage);
+    stackedWidget2->setCurrentWidget(waitingPage);
+
+    // for debug
+//    stackedWidget2->setCurrentWidget(callingPage);
 //    stackedWidget2->setCurrentWidget(playingPage);
     
     // And send our username to the chat server.
@@ -1017,283 +974,18 @@ void MainWindow::catchInformation(int poker)
     socket->write(QString("/system:" +tr("playplay")+":" +send.join(",")+"\n").toUtf8());
 }
 
-void MainWindow::button0()
-{
-    callpoker=0;
-    emit callingsend_signal(callpoker);
-}
-void MainWindow::button1()
-{
-    callpoker=1;
-    emit callingsend_signal(callpoker);
-}
-void MainWindow::button2()
-{
-    callpoker=2;
-    emit callingsend_signal(callpoker);
-}
-void MainWindow::button3()
-{
-    callpoker=3;
-    emit callingsend_signal(callpoker);
-}
-void MainWindow::button4()
-{
-    callpoker=4;
-    emit callingsend_signal(callpoker);
-}
-void MainWindow::button5()
-{
-    callpoker=5;
-    emit callingsend_signal(callpoker);
-}
-void MainWindow::button6()
-{
-    callpoker=6;
-    emit callingsend_signal(callpoker);
-}
-void MainWindow::button7()
-{
-    callpoker=7;
-    emit callingsend_signal(callpoker);
-}
-void MainWindow::button8()
-{
-    callpoker=8;
-    emit callingsend_signal(callpoker);
-}
-void MainWindow::button9()
-{
-    callpoker=9;
-    emit callingsend_signal(callpoker);
-}
-void MainWindow::button10()
-{
-    callpoker=10;
-    emit callingsend_signal(callpoker);
-}
-void MainWindow::button11()
-{
-    callpoker=11;
-    emit callingsend_signal(callpoker);
-}
-void MainWindow::button12()
-{
-    callpoker=12;
-    emit callingsend_signal(callpoker);
+void MainWindow::callButtonClick() {
+
+    for (unsigned int i=0; i<POKER_CALL_BUTTON_NUMBER; ++i) {
+        if ( callbutton[i] == sender() ) {
+            callpoker = i;
+            emit callingsend_slot(callpoker);
+//            printf("%d\n",callpoker);
+            break;
+        }
+    }
 }
 
-void MainWindow::button13()
-{
-    callpoker=13;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button14()
-{
-    callpoker=14;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button15()
-{
-    callpoker=15;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button16()
-{
-    callpoker=16;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button17()
-{
-    callpoker=17;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button18()
-{
-    callpoker=18;
-    emit callingsend_signal(callpoker);
-}
-void MainWindow::button19()
-{
-    callpoker=19;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button20()
-{
-    callpoker=20;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button21()
-{
-    callpoker=21;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button22()
-{
-    callpoker=22;
-    emit callingsend_signal(callpoker);
-}
-void MainWindow::button23()
-{
-    callpoker=23;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button24()
-{
-    callpoker=24;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button25()
-{
-    callpoker=25;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button26()
-{
-    callpoker=26;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button27()
-{
-    callpoker=27;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button28()
-{
-    callpoker=28;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button29()
-{
-    callpoker=29;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button30()
-{
-    callpoker=30;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button31()
-{
-    callpoker=31;
-    emit callingsend_signal(callpoker);
-}
-void MainWindow::button32()
-{
-    callpoker=32;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button33()
-{
-    callpoker=33;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button34()
-{
-    callpoker=34;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button35()
-{
-    callpoker=35;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button36()
-{
-    callpoker=36;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button37()
-{
-    callpoker=37;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button38()
-{
-    callpoker=38;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button39()
-{
-    callpoker=39;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button40()
-{
-    callpoker=40;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button41()
-{
-    callpoker=41;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button42()
-{
-    callpoker=42;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button43()
-{
-    callpoker=43;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button44()
-{
-    callpoker=44;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button45()
-{
-    callpoker=45;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button46()
-{
-    callpoker=46;
-    emit callingsend_signal(callpoker);
-}
-void MainWindow::button47()
-{
-    callpoker=47;
-    emit callingsend_signal(callpoker);
-}
-
-void MainWindow::button48()
-{
-    callpoker=48;
-    emit callingsend_signal(callpoker);
-}
 void MainWindow::button_pass()
 {
     callpoker=-1;
