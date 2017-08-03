@@ -23,7 +23,8 @@ using Qt with Xcode
 **sh QOBJECT_rebuild.sh**
 4. open **BridgeClient.xcodeproj** or **BridgeServer.xcodeproj**
 5. *(BridgeClient only)*
-**add framework to project     1. CoreFoundation 2. GLUT 3. OpenAL**
+**add framework to project**     
+1. CoreFoundation 2. GLUT 3. OpenAL
 **add new group (name "Resource")** and **add file(image、sound) to the group**
 (file path: BridgeClient/BridgeClient/Resource/)
 
