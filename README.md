@@ -16,18 +16,21 @@ P.S.  當掉請自行重新連線&&名稱請不要取一樣!!!分不清楚我不
 
 using Qt with Xcode
 
-1. open terminal:<b>brew install qt</b>
-	</br>(path: /usr/local/Cellar/qt5/{version}/)
+1. in terminal: **brew install qt**
+2. in terminal: **brew link qt --force**   
+3. in terminal:
+**cd {BridgeClient or BridgeServer}**
+**sh QOBJECT_rebuild.sh**
+4. open **BridgeClient.xcodeproj** or **BridgeServer.xcodeproj**
+5. *(BridgeClient only)*
+**add framework to project     1. CoreFoundation 2. GLUT 3. OpenAL**
+**add new group (name "Resource")** and **add file(image、sound) to the group**
+(file path: BridgeClient/BridgeClient/Resource/)
 
-2. to system <b>"/etc/paths"</b> add qt bin path <b>"/usr/local/Cellar/qt5/5.7.1_1/bin"</b>     
+# Game Screenshots
 
-3. open terminal:
-	</br><b>cd {BridgeClient or BridgeServer}</b>
-	</br><b>sh QOBJECT_rebuild.sh</b> 
+the Screenshots 1
+![alt text](https://raw.githubusercontent.com/g78101/PokerBridge-Qt/master/GameScreenshots/1.jpg)
 
-4. open <b>BridgeClient.xcodeproj</b> or <b>BridgeServer.xcodeproj</b>
-
-5. (BridgeClient only)
-	</br><b>add framework to project     1. CoreFoundation 2. GLUT 3. OpenAL</b>
-	</br><b>add new group (name "Resource")</b> and <b>add file(image、sound) to the group</b> 
-	</br>(file path: BridgeClient/BridgeClient/Resource/)
+the Screenshots 2
+![alt text](https://raw.githubusercontent.com/g78101/PokerBridge-Qt/master/GameScreenshots/2.jpg)
